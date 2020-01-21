@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ciudadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="35dp"
+        android:text="Mexicali"/>
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        ></TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/climaImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"></ImageView>
+
+        <TextView
+            android:id="@+id/temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="50dp"
+            ></TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dia1"
+                android:layout_above="@+id/temp1Min"
+                ></TextView>
+            <TextView
+                android:id="@+id/temp1Min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="2dp"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                ></TextView>
+            <TextView
+                android:id="@+id/temp1Max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/temp1Min"
+                android:text="0"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                ></TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="3">
+        <TextView
+            android:id="@+id/dia2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dia2"
+            android:padding="5dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp2Min"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+
+            ></TextView>
+        <TextView
+            android:id="@+id/temp2Max"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+
+            ></TextView>
+        <TextView
+            android:id="@+id/dia3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dia3"
+            android:padding="5dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp3Min"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp3Max"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/dia4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dia4"
+            android:padding="5dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp4Min"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp4Max"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/dia5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dia5"
+            android:padding="5dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp5Min"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/temp5Max"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="0"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:paddingVertical="3dp"
+            android:paddingHorizontal="10dp"
+            ></TextView>
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/nombreCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingresa el nombre de la ciudad"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buscarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Buscar" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/cambiarDer"
+            android:layout_width="60dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow"></ImageButton>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
